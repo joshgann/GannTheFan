@@ -109,12 +109,6 @@
 					<div id="sidebar">
 						<div class="inner">
 
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
 
 							<!-- Menu -->
 								<nav id="menu">
@@ -126,9 +120,41 @@
 										<li><a href="pujols.html">What Does 600 Mean for Pujols?</a></li>
 										<li><a href="finals.html">NBA Finals Preview</a></li>
 										<li><a href="story1.html">Protesting The National Anthem</a></li>
+										<li class="stretch"></li>
 											</ul>
 								</nav>
 
+								li{
+								    display:inline-block;
+								    vertical-align: top;
+								    display: inline-block;
+								    *display: inline;
+								    zoom: 1
+								}
+
+								li a {
+								    text-align:center;
+								    background-color:green;
+								}
+
+								ul {
+								    background-color:#999999;
+								    border:1px solid #006666;
+								    height:25px;
+								    list-style-type:none;
+								    margin:0;
+								    padding:0;
+								    text-align: justify;
+								    -ms-text-justify: distribute-all-lines;
+								    text-justify: distribute-all-lines;
+								}
+
+								.stretch {
+								    width: 100%;
+								    display: inline-block;
+								    font-size: 0;
+								    line-height: 0
+								}
 							<!-- Section -->
 								<section>
 									<header class="major">
