@@ -15,20 +15,36 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<style media="screen" type="text/css">
 
-		#body {
-	padding: 1em;
-	width:50%;
-	border: 8px white;
-	background:white;
-	}
+		#nav-container{margin-top:20px;}
+.navigation{text-align:center; background-color:#D1673A;}
+.navigation li{display:inline; }
+.navigation a{text-decoration:none; color:black; display:inline-block; padding:20px 20px 20px}
+.navigation a:hover{color:white; background-color:black}
 
-	#sidebar {
-	padding: 1em;
-	width:20%;
-	border: 8px white;
-	background:white;
-	float: left;
-	}
+.navigation{
+position:relative;
+}
+
+.logo{
+height:60px;
+}
+
+@media only screen and (max-width: 767px) {
+.logo{
+ position:absolute;
+    top:0;
+    left:0;
+
+
+}
+.navigation{
+   top:60px;
+}
+
+.navigation ul li a{
+    width:100%;
+}
+}
 
 </style>
 	</head>
@@ -68,6 +84,10 @@
 										<h2>My Stories</h2>
 									</header>
 									<div class="posts">
+										<article>
+											<a href="judge.html"class="image"><img src="https://peopledotcom.files.wordpress.com/2017/07/aaron-judge.jpg?w=2000" alt="" /></a>
+											<h3>Meet The Judge</h3>
+										</article>
 										<article>
 											<a href="offseason.html"class="image"><img src="https://s3.amazonaws.com/kulturehub/uploads/2017/06/chris-paul-rockets-770x385.jpg" alt="" /></a>
 											<h3>NBA Offseason Grades</h3>
@@ -147,6 +167,7 @@
 									</header>
 									<ul>
 										<li><a href="index.html">Homepage</a></li>
+										<li><a href="judge.html">Meet The Judge</a><li>
 										<li><a href="offseason.html">NBA Offseason Grades</a></li>
 										<li><a href="draft.html">NBA Draft Recap</a></li>
 										<li><a href="warriors.html">NBA Finals Recap</a></li>
