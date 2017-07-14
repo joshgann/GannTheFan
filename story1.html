@@ -15,35 +15,11 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<style media="screen" type="text/css">
 
-		#nav-container{margin-top:20px;}
-.navigation{text-align:center; background-color:#D1673A;}
-.navigation li{display:inline; }
-.navigation a{text-decoration:none; color:black; display:inline-block; padding:20px 20px 20px}
-.navigation a:hover{color:white; background-color:black}
-
-.navigation{
-position:relative;
+		function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
 }
-
-.logo{
-height:60px;
-}
-
-@media only screen and (max-width: 767px) {
-.logo{
- position:absolute;
-    top:0;
-    left:0;
-
-
-}
-.navigation{
-   top:60px;
-}
-
-.navigation ul li a{
-    width:100%;
-}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
 }
 
 
