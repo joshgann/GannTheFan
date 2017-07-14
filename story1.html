@@ -13,53 +13,101 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<div class="w3-sidebar w3-bar-block w3-collapse w3-card-2" style="width:200px;" id="mySidebar">
-		<button class="w3-bar-item w3-button w3-hide-large"
-		onclick="w3_close()">Close &times;</button>
-		<nav id="menu">
-		<header class="major">
-			<h2>Menu</h2>
-		</header>
-		<ul>
-			<li><a href="index.html">Homepage</a></li>
-			<li><a href="judge.html">Meet The Judge</a><li>
-			<li><a href="offseason.html">NBA Offseason Grades</a></li>
-			<li><a href="draft.html">NBA Draft Recap</a></li>
-			<li><a href="warriors.html">NBA Finals Recap</a></li>
-			<li><a href="pujols.html">What Does 600 Mean for Pujols?</a></li>
-			<li><a href="finals.html">NBA Finals Preview</a></li>
-			<li><a href="story1.html">Protesting The National Anthem</a></li>
-				</ul>
-				<section>
-					<header class="major">
-						<h2>Get in touch</h2>
-					</header>
-					<p>If you would like to contact me about any of my work, I can be contacted by email or phone!</p>
-					<ul class="contact">
-						<li class="fa-envelope-o"><a href="#">joshg15@vt.edu</a></li>
-						<li class="fa-phone">(757)377-9893</li>
-					</ul>
-				</section>
-				<footer id="footer">
-					<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-				</footer>
-			</div>
-		</div>
+		<style media="screen" type="text/css">
 
-		</div>
+		#nav-container{margin-top:20px;}
+	.navigation{text-align:center; background-color:#D1673A;}
+	.navigation li{display:inline; }
+	.navigation a{text-decoration:none; color:black; display:inline-block; padding:20px 20px 20px}
+	.navigation a:hover{color:white; background-color:black}
 
-		</nav>
+	.navigation{
+	position:relative;
+	}
 
-		<div class="w3-main" style="margin-left:200px">
+	.logo{
+	height:60px;
+	}
 
-		<div class="w3-teal">
-		<button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-		</div>
-		</div>
+	@media only screen and (max-width: 767px) {
+	.logo{
+	position:absolute;
+		top:0;
+		left:0;
 
-		</head>
+
+	}
+	.navigation{
+	 top:60px;
+	}
+
+	.navigation ul li a{
+		width:100%;
+	}
+	}
+	#body {
+		padding: 1em;
+		width:50%;
+		border: 8px white;
+		background:white;
+		}
+
+		#sidebar {
+		padding: 1em;
+		width:20%;
+		border: 8px white;
+		background:white;
+		float: left;
+		}
+
+</style>
+	</head>
 	<body>
 
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+
+					<!-- Menu -->
+						<nav id="menu">
+							<header class="major">
+								<h2>Menu</h2>
+							</header>
+							<ul>
+								<li><a href="index.html">Homepage</a></li>
+								<li><a href="judge.html">Meet The Judge</a><li>
+								<li><a href="offseason.html">NBA Offseason Grades</a></li>
+								<li><a href="draft.html">NBA Draft Recap</a></li>
+								<li><a href="warriors.html">NBA Finals Recap</a></li>
+								<li><a href="pujols.html">What Does 600 Mean for Pujols?</a></li>
+								<li><a href="finals.html">NBA Finals Preview</a></li>
+								<li><a href="story1.html">Protesting The National Anthem</a></li>
+									</ul>
+						</nav>
+
+
+
+									<!-- Section -->
+										<section>
+											<header class="major">
+												<h2>Get in touch</h2>
+											</header>
+											<p>If you would like to contact me about any of my work, I can be contacted by email or phone!</p>
+											<ul class="contact">
+												<li class="fa-envelope-o"><a href="#">joshg15@vt.edu</a></li>
+												<li class="fa-phone">(757)377-9893</li>
+											</ul>
+										</section>
+
+									<!-- Footer -->
+										<footer id="footer">
+											<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+										</footer>
+
+								</div>
+							</div>
+
+					</div>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -109,14 +157,6 @@
 												<script src="assets/js/util.js"></script>
 												<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 												<script src="assets/js/main.js"></script>
-												<script>
-												function w3_open() {
-												document.getElementById("mySidebar").style.display = "block";
-												}
-												function w3_close() {
-												document.getElementById("mySidebar").style.display = "none";
-												}
-												</script>
 
 										</body>
 									</html>
